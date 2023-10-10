@@ -15,8 +15,7 @@ public class Seek : MonoBehaviour
     {
         // CHALLENGE: This could be more efficient
         GameObject moveTowardsThis = GameObject.FindWithTag("Player");
-        Vector3 vector3 = Vector3.MoveTowards(transform.position, moveTowardsThis.transform.position, 0.005f);
-        transform.position = vector3;
+        transform.position = Vector3.MoveTowards(transform.position, moveTowardsThis.transform.position, 0.005f);
         // put in player's position
     }
 }
